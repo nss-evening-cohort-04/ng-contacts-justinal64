@@ -1,0 +1,9 @@
+.wrapper {
+    font-family:'arial', sans-serif;
+}
+input.icon {
+    padding:5px;
+}
+input.icon::-webkit-input-placeholder {
+    font-family:'FontAwesome';
+}
