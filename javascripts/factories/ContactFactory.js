@@ -7,10 +7,11 @@ app.factory("ContactFactory", function($q, $http, FIREBASE_CONFIG) {
             $http.get(`${FIREBASE_CONFIG.databaseURL}/contacts.json`)
             .success((response) => {
                 let items = [];
-                Object.heys(response).forEach((key) => {
+                Object.keys(response).forEach((key) => {
                     response[key].id = key;
                     items.push(response[key]);
                 });
+                resolve(response);
             })
             .error((errorResponse) => {
                 reject(errorResponse);
