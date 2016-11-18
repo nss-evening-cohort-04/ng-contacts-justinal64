@@ -1,32 +1,43 @@
 "use strict";
 
-app.controller("LoginCtrl", ($scope, FIREBASE_CONFIG, ContactFactory) => {
-    $scope.loginUser = {};
+app.controller("LoginCtrl", ($scope, FIREBASE_CONFIG, LoginFactory, ContactFactory, $rootScope) => {
+    $scope.user = {};
     $scope.contacts = {};
+    $rootScope.showListView = true;
+    var uid = "";
 
     $scope.login = () => {
-    console.log("Login is being clicked!!!!!!");
-    console.log("FIREBASE_CONFIG", FIREBASE_CONFIG);
-    getContacts();
+        $scope.user = {
+            "email": $scope.user.login_email,
+            "password": $scope.user.login_password,
+            "username": $scope.user.login_username
+        };
 
-    // getContacts();
-    // if($scope.login_email === undefined) {
-    //     console.log("email address invalid");
-    // }
-        // ContactFactory.postNewContact($scope.newContact).then((contactId) => {
-            //     // getItems();
-            //     // Clear out the contact fields
-            //     $scope.newContact = {};
-            //     $scope.showListView = true;
-        // });
-    };
-
-    let getContacts = function() {
-        ContactFactory.getContactList().then(function(fbContacts) {
-            $scope.contacts = fbContacts;
-            console.log("items from controller", $scope.contacts);
+        LoginFactory.loginUser($scope.user)
+        .then((response) => {
+            uid = response.uid;
+            console.log("uid", uid);
+            $rootScope.showListView = false;
         });
     };
+
+    $scope.register = () => {
+        $scope.user = {
+            "email": $scope.user.login_email,
+            "password": $scope.user.login_password,
+            "username": $scope.user.login_username
+        };
+
+        LoginFactory.registerUser($scope.user).then((credentials) => {
+                uid = credentials.uid;
+                LoginFactory.loginUser($scope.user)
+                .then((results) => {
+                    console.log("results", results);
+
+                });
+            });
+
+        };
 
     $scope.check_email = () => {
         if($scope.login_email === undefined) {
@@ -34,11 +45,4 @@ app.controller("LoginCtrl", ($scope, FIREBASE_CONFIG, ContactFactory) => {
         }
     };
 
-    $scope.register = () => {
-        console.log("register button is working");
-    };
-
-    // $scope.submit = () => {
-    //     console.log("submit working");
-    // };
 });
