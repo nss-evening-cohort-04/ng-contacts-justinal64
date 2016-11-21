@@ -10,10 +10,10 @@
     </head>
 
     <body ng-app="ContactApp">
-<!--         <nav class="navbar navbar-default" ng-controller="NavCtrl">
-          <div class="container-fluid"> -->
+        <nav class="navbar navbar-default" ng-controller="NavCtrl">
+          <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
-<!--             <div class="navbar-header">
+            <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
@@ -22,18 +22,17 @@
               </button>
               <a class="navbar-brand" href="#">Address Book</a>
             </div>
- -->
+
             <!-- Collect the nav links, forms, and other content for toggling -->
-<!--             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right" ng-repeat="navItem in navItems">
                 <li><a href="#">{{navItem.name}}</a></li>
-              </ul> -->
-            <!-- </div> --><!-- /.navbar-collapse -->
-          <!-- </div> --><!-- /.container-fluid -->
-        <!-- </nav> -->
-<!--     <div ng-controller="MainCtrl">
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div> <!-- /.container-fluid -->
+        </nav>
         <div>
-            <div class="col-xs-offset-3 col-xs-6"> -->
+            <div class="col-xs-offset-3 col-xs-6">
                 <!-- Login Section -->
 <!--                 <div class="login" ng-controller="LoginCtrl" ng-show="showListView">
                     <form>
@@ -47,196 +46,26 @@
                     </form>
                 </div> -->
                 <!-- Existing Contacts -->
-<!--                 <div class="new-contact" ng-controller="ContactFormCtrl" ng-show="!showListView">
-                    <h1>Address Book</h1> -->
-                        <!-- <div ng-show="!showListView"> -->
-                    <!-- <form> -->
-                        <!-- <h3>Business Section</h3> -->
-                        <!-- Business Section -->
-                        <!-- Cooler way to get address info and annivarsary?? -->
- <!--                        <div class="row">
-                            <div class="form-group col-md-4">
-                                <label for="name" class="control-label">First Name</label>
-                                <input type="text" value='' class="form-control" id="name" placeholder="First Name" ng-model="newContact.first_name">
-                            </div>
-                            <div class="form-group col-md-4">
-                                <label for="name" class="control-label">Last Name</label>
-                                <input type="text" class="form-control" id="name" placeholder="Last Name" ng-model="newContact.last_name">
-                            </div>
-                            <div class="form-group col-md-4">
-                                <label for="name" class="control-label">Email Address</label>
-                                <input type="email" value='' class="form-control" id="name" placeholder="Email Address" ng-model="newContact.email_address">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group col-md-4">
-                                <label for="name" class="control-label">Office Number</label>
-                                <input type="text" value='' class="form-control" id="name" placeholder="Office Number" ng-model="newContact.office_phone">
-                            </div>
-                            <div class="form-group col-md-4">
-                                <label for="name" class="control-label">Cell Number</label>
-                                <input type="text" value='' class="form-control" id="name" placeholder="Cell Number" ng-model="newContact.cell_phone">
-                            </div>
-                            <div class="form-group col-md-4">
-                                <label for="name" class="control-label">Business Name</label>
-                                <input type="text" value='' class="form-control" id="name" placeholder="Business Name" ng-model="newContact.business_name">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group col-md-4">
-                                <label for="name" class="control-label">Address</label>
-                                <input type="text" value='' class="form-control" id="name" placeholder="Address" ng-model="newContact.address">
-                            </div>
-                            <div class="form-group col-md-4">
-                                <label for="name" class="control-label">City</label>
-                                <input type="text" value='' class="form-control" id="name" placeholder="City" ng-model="newContact.city">
-                            </div>
-                            <div class="form-group col-md-4">
-                                <label for="name" class="control-label">State</label>
-                                <input type="text" value='' class="form-control" id="name" placeholder="State" ng-model="newContact.state">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group col-md-4">
-                                <label for="name" class="control-label">Zip</label>
-                                <input type="text" value='' class="form-control" id="name" placeholder="Zip" ng-model="newContact.zip">
-                            </div>
-                            <div class="form-group col-md-4">
-                                <label for="name" class="control-label">Country</label>
-                                <input type="text" value='' class="form-control" id="name" placeholder="Country" ng-model="newContact.country">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group col-md-12">
-                                <label for="name" class="control-label">Additional Info</label>
-                                <textarea class="form-control" rows="5" id="comment" ng-model="newContact.add_info"></textarea>
-                            </div>
-                        </div> -->
-                        <!-- Social Media -->
-                        <!-- Add Icons for social media -->
-<!--                         <h3>Social Media</h3>
-                        <div class="row">
-                            <div class="form-group col-md-4">
-                                <label for="name" class="control-label">LinkedIn</label>
-                                <input type="text" value='' class="form-control" id="name" placeholder="LinkedIn" ng-model="newContact.linkedin">
-                            </div>
-                            <div class="form-group col-md-4">
-                                <label for="name" class="control-label">Facebook</label>
-                                <input type="text" value='' class="form-control" id="name" placeholder="Facebook" ng-model="newContact.facebook">
-                            </div>
-                            <div class="form-group col-md-4">
-                                <label for="name" class="control-label">Google+</label>
-                                <input type="text" value='' class="form-control" id="name" placeholder="Google+" ng-model="newContact.google">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group col-md-4">
-                                <label for="name" class="control-label">Twitter</label>
-                                <input type="text" value='' class="form-control" id="name" placeholder="Twitter" ng-model="newContact.twitter">
-                            </div> -->
-    <!--                         <div class="form-group col-md-4">
-                                <label for="name" class="control-label">Twitter</label>
-                                <p class="wrapper">
-                                    <input class="icon" type="text" placeholder="&#xf081;" />
-                                </p>
-                            </div> -->
-                        <!-- </div> -->
-                        <!-- Personal Section -->
-<!--                         <h3>Personal Section</h3>
-                        <div class="row">
-                            <div class="form-group col-md-4">
-                                <label for="name" class="control-label">Birthday</label>
-                                <input type="text" value='' class="form-control" id="name" placeholder="Birthday" ng-model="newContact.birthday">
-                            </div>
-                            <div class="form-group col-md-4">
-                                <label for="name" class="control-label">Spouse</label>
-                                <input type="text" value='' class="form-control" id="name" placeholder="Spouse" ng-model="newContact.spouse">
-                            </div>
-                            <div class="form-group col-md-4">
-                                <label for="name" class="control-label">Work Anniversary</label>
-                                <input type="text" value='' class="form-control" id="name" placeholder="Work Anniversary" ng-model="newContact.work_anniversary">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group col-md-2 col-xs-offset-5">
-                                <button type="submit" class="btn btn-success" ng-click="addNewContact()">Submit</button>
-                            </div>
-                        </div>
-                    </form>
-                </div> -->
-            <!-- </div> -->
-<!--         </div>
-    </div> -->
-    <!-- Start of test -->
-
-<div class="ct" id="t1">
-    <div class="ct" id="t2">
-        <div class="ct" id="t3">
-            <div class="ct" id="t4">
-            <section>
-                <ul>
-                    <a href="#t1"><li class="icon fa fa-keyboard-o" id="uno"></li></a>
-                    <a href="#t2"><li class="icon fa fa-address-book" id="dos"></li></a>
-                    <a href="#t3"><li class="icon fa fa-address-card" id="tres"></li></a>
-                    <a href="#t4"><li class="icon fa fa-dribbble" id="cuatro"></li></a>
-                </ul>
-                <div class="page" id="p1">
-                    <li class="icon fa fa-keyboard-o" id="homepage"><span class="title">Login</span>
-                        <!-- <span class="hint">Like this pen to see the magic!...<br/> Just kidding, it won't happen anything but I'll be really happy If you do so.
-                        </span> -->
-                <!-- Login Section -->
-                        <div class="login" ng-controller="LoginCtrl" ng-show="showListView">
-                            <form>
-                                <div class="col-xs-12 login-container">
-                                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" value="" ng-model="user.login_email">
-                                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" value="" ng-model="user.login_password">
-                                    <input type="text" id="inputUsername" class="form-control" placeholder="Username" value="" ng-model="user.login_username">
-                                    <button class="btn btn-lg col-xs-5 btn-login" id="loginButton" ng-click="login()">Login</button>
-                                    <button class="btn btn-lg col-xs-5 col-xs-offset-2 btn-register" id="registerButton" ng-click="register()">Register</button>
-                                </div>
-                            </form>
-                        </div>
-                    </li>
-                </div>
-                <div class="page" id="p2">
-                    <li class="icon fa fa-address-book">
-                        <span class="title">
-                        Contacts go here!
-                        </span>
-                    </li>
-                </div>
-                <div class="page" id="p3">
-                    <li class="icon fa fa-address-card">
-                        <span class="title">
-                        Add New Contact
-                        </span>
-                    </li>
-                </div>
-                <div class="page" id="p4">
-                    <li class="icon fa fa-dribbble"><span class="title">Dribbble</span><span class="hint"><a href="https://dribbble.com/rupok" target="_blank">Follow me on Dribbble</span></li>
-                </div>
-                <!-- <p class="credit"> Original Pen by <a href="http://codepen.io/hrtzt/">Alberto Hartzet</a></p> -->
-            </section>
 
             </div>
         </div>
-    </div>
-</div>
+    <!-- Start of test -->
+
   <!-- End of test -->
     <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
     <script type="text/javascript" src="/lib/node_modules/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="/lib/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/lib/node_modules/angular/angular.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="/lib/node_modules/angular-route/angular-route.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/lib/bower_components/angular-route/angular-route.min.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" src="/javascripts/app.js"></script>
     <script src="/javascripts/AppConstants.js"></script>
     <script type="text/javascript" src="/javascripts/AppConfig.js"></script>
-    <script type="text/javascript" src="/javascripts/factories/LoginFactory.js"></script>
+    <!-- <script type="text/javascript" src="/javascripts/factories/LoginFactory.js"></script> -->
     <script type="text/javascript" src="/javascripts/factories/ContactFactory.js"></script>
     <script type="text/javascript" src="/javascripts/controllers/NavCtrl.js"></script>
-    <script type="text/javascript" src="/javascripts/controllers/MainCtrl.js"></script>
-    <script type="text/javascript" src="/javascripts/controllers/LoginCtrl.js"></script>
-    <script type="text/javascript" src="/javascripts/controllers/ContactCtrl.js"></script>
+    <!-- <script type="text/javascript" src="/javascripts/controllers/MainCtrl.js"></script> -->
+    <!-- <script type="text/javascript" src="/javascripts/controllers/LoginCtrl.js"></script> -->
+    <script type="text/javascript" src="/javascripts/controllers/NewContactCtrl.js"></script>
 
 
 

@@ -1,0 +1,24 @@
+{
+  "name": "addressbook",
+  "description": "Address Book to store contacts",
+  "main": "Gruntfile.js",
+  "authors": [
+    "https://github.com/justinal64"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Address",
+    "Book"
+  ],
+  "homepage": "https://github.com/nss-evening-cohort-04/ng-contacts-justinal64",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "^1.5.8"
+  }
+}

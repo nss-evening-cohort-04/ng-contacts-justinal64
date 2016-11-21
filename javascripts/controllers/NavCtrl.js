@@ -1,5 +1,14 @@
 "use strict";
 
 app.controller("NavCtrl", ($scope) => {
-    $scope.navItems = [{name: "LogOut"}, {name: "All Contacts"}, {name: "New Contact"}];
+    app.controller("NavCtrl", ($scope) => {
+    $scope.navItems = [{name: "Logout", url: "#/logout"},
+    {name:"All Items", url: "#/items/list"},
+    {name:"New Item", url: "#/items/new"}];
+});
+
+
+    $scope.test = () => {
+        console.log("test working");
+    };
 });
