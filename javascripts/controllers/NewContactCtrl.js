@@ -1,16 +1,10 @@
 "use strict";
 
-app.controller("ContactFormCtrl", ($scope, $rootScope) => {
-    $scope.welcome = "hello";
-    $scope.newContact = {};
-    $rootScope.showListView = true;
+app.controller("NewContactCtrl", function($scope) {
+    $scope.newContact = [];
+
     $scope.addNewContact = () => {
-        console.log("newTask in function", $scope.newContact);
-        // ContactFactory.postNewContact($scope.newContact).then((contactId) => {
-        //     // getItems();
-        //     // Clear out the contact fields
-        //     $scope.newContact = {};
-        //     $scope.showListView = true;
-        // });
+        // Add logic to capture info from all fields and add it to db
+        console.log("test");
     };
 });
