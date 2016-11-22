@@ -13,9 +13,17 @@ input.icon::-webkit-input-placeholder {
 .profile .centered {
   text-align: center; }
 
+.contacts .row {
+  margin-left: 0;
+  margin-right: 0; }
+  .contacts .row div {
+    margin-bottom: .25em; }
+
 .profile, .contacts {
   margin-bottom: 1em;
-  background-color: #ccc; }
+  background-color: #ccc;
+  border-radius: 10px;
+  border: 5px solid orange; }
   .profile .name, .contacts .name {
     border-bottom: 1px solid grey; }
   .profile ol, .contacts ol {

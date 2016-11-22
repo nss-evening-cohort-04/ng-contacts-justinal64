@@ -18,7 +18,13 @@ input.icon::-webkit-input-placeholder {
     }
 }
 
-
+.contacts .row {
+    margin-left: 0;
+    margin-right: 0;
+    div {
+        margin-bottom: .25em;
+    }
+}
 
 // Styling for the profile section in display-contacts.html
 .profile, .contacts {
@@ -27,9 +33,9 @@ input.icon::-webkit-input-placeholder {
         border-bottom: 1px solid grey;
     }
     background-color: #ccc;
-    // border-radius: 10px;
+    border-radius: 10px;
     // box-shadow: 5px 5px 5px orange;
-    // border: 1px solid #945BFF;
+    border: 5px solid orange;
     ol {
         // border: 2px solid black;
         list-style-type: none;
