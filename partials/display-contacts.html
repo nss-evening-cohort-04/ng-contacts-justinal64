@@ -56,9 +56,6 @@
         <ol>
             <li ng-click="test()">All Contacts</li>
             <li ng-click="test()">Groups</li>
-            <li ng-click="test()">All Contacts</li>
-            <li ng-click="test()">All Contacts</li>
-            <li ng-click="test()">All Contacts</li>
         </ol>
     </div>
 </div>
@@ -77,8 +74,8 @@
                     <div class="col-xs-3">
                         <span>{{contact.office_phone}}</span>
                     </div>
-                    <div class="col-xs-1 col-xs-offset-3 pencil" ng-click="test()">
-                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                    <div class="col-xs-1 col-xs-offset-3 delete" ng-click="deleteContact(contact.id)">
+                        <button class="btn btn-danger fa fa-trash-o"></button>
                     </div>
                     <div class="col-xs-1" ng-click="test()">
                         <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
