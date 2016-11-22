@@ -20,7 +20,7 @@ app.config(function($routeProvider) {
         })
         .when('/login', {
             templateUrl: 'partials/login-view.html',
-            controller: 'LoginCtrl'
+            controller: 'AuthCtrl'
         })
         // .when('/items/view/:id', { // colon means the value will change
         //     templateUrl: 'partials/item-view.html',

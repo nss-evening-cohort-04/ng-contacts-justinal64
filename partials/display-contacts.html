@@ -1,4 +1,4 @@
-<div>
+<!-- <div>
     <div class="col-xs-12">
         <div class="col-xs-offset-4 col-xs-6">
             <h1>Existing Contacts</h1>
@@ -42,4 +42,57 @@
             </div>
         </div>
     </div>
+</div> -->
+
+<div class="row">
+    <div class="col-xs-4 col-xs-offset-4 profile">
+        <!-- Img of Person -->
+        <div class="centered">
+            <img src="img\wife.jpg">
+            <div class="name">
+                <span> Katie Leggett</span>
+            </div>
+        </div>
+        <ol>
+            <li ng-click="test()">All Contacts</li>
+            <li ng-click="test()">Groups</li>
+            <li ng-click="test()">All Contacts</li>
+            <li ng-click="test()">All Contacts</li>
+            <li ng-click="test()">All Contacts</li>
+        </ol>
+    </div>
 </div>
+<div class="row">
+    <div class="col-xs-10 col-xs-offset-1 display-contacts">
+        <div class="contacts">
+            <span>All Contacts</span>
+            <div ng-repeat="contact in contacts">
+                <div class="row">
+                    <div class="col-xs-1">
+                        <img src="img\wife.jpg">
+                    </div>
+                    <div class="col-xs-3">
+                        <span>{{contact.first_name}} {{contact.last_name}}</span>
+                    </div>
+                    <div class="col-xs-3">
+                        <span>{{contact.office_phone}}</span>
+                    </div>
+                    <div class="col-xs-1 col-xs-offset-3 pencil" ng-click="test()">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-xs-1" ng-click="test()">
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+

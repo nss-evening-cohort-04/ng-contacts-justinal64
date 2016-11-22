@@ -11,5 +11,9 @@ app.controller("DisplayContactsCtrl", function($scope, $location, ContactFactory
         });
     };
 
+    $scope.test = () => {
+        console.log("test");
+    };
+
     $scope.displayContacts();
 });

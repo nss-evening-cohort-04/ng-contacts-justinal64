@@ -1,3 +1,6 @@
+body {
+  background-color: #252830; }
+
 .wrapper {
   font-family: 'arial', sans-serif; }
 
@@ -6,3 +9,19 @@ input.icon {
 
 input.icon::-webkit-input-placeholder {
   font-family: 'FontAwesome'; }
+
+.profile .centered {
+  text-align: center; }
+
+.profile, .contacts {
+  margin-bottom: 1em;
+  background-color: #ccc; }
+  .profile .name, .contacts .name {
+    border-bottom: 1px solid grey; }
+  .profile ol, .contacts ol {
+    list-style-type: none;
+    padding-left: 0; }
+  .profile li, .contacts li {
+    font-size: 1.25em; }
+  .profile li:hover, .contacts li:hover {
+    background-color: #1ca8dd; }
