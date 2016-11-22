@@ -1,0 +1,45 @@
+<div>
+    <div class="col-xs-12">
+        <div class="col-xs-offset-4 col-xs-6">
+            <h1>Existing Contacts</h1>
+        </div>
+            <div class="contacts" ng-controller="DisplayContactsCtrl">
+                <div ng-repeat="contact in contacts">
+                    <div class="col-xs-4">
+                        <div class="row">
+                            <h4>Personal Information</h4>
+                            <p><span>Name: {{contact.first_name}} {{contact.last_name}}</span></p>
+                            <p>Email Address: {{contact.email_address}}</p>
+                        </div>
+                        <div class="row">
+                            <p>Office #: {{contact.office_phone}}</p>
+                            <p>Cell #: {{contact.cell_phone}}</p>
+                            <p>Business Name:{{contact.business_name}}</p>
+                        </div>
+                        <div class="row">
+                            <p>Address: {{contact.address}}</p>
+                            <p>City: {{contact.city}}</p>
+                            <p>State: {{contact.state}}</p>
+                        </div>
+                        <div class="row">
+                            <p>Zip: {{contact.zip}}</p>
+                        </div>
+                        <div class="row">
+                            <h4>Social Infomation</h4>
+                            <p>Facebook: <a href="{{contact.facebook}}">Facebook Profile</a></p>
+                            <p>Google+: <a href="{{contact.google}}">Google+ Profile</a></p>
+                            <p>Twitter: <a href="{{contact.twitter}}">Twitter Profile</a></p>
+                            <p>LinkedIn: <a href="{{contact.linkedin}}">LinkedIn Profile</a></p>
+                        </div>
+                        <div class="row">
+                            <h4>Personal</h4>
+                            <p>Birthday: {{contact.birthday}}</p>
+                            <p>Spouse Name: {{contact.spouse}}</p>
+                            <p>Work Anniversary: {{contact.work_anniversary}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

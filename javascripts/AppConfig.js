@@ -10,9 +10,17 @@ app.config(function($routeProvider) {
         //     templateUrl: 'partials/item-list.html',
         //     controller: 'ItemListCtrl'
         // })
+        .when('/contact/display', {
+            templateUrl: 'partials/display-contacts.html',
+            controller: 'DisplayContactsCtrl'
+        })
         .when('/contact/new', {
-            templateUrl: 'partials/contact-new.html',
+            templateUrl: 'partials/new-contact.html',
             controller: 'NewContactCtrl'
+        })
+        .when('/login', {
+            templateUrl: 'partials/login-view.html',
+            controller: 'LoginCtrl'
         })
         // .when('/items/view/:id', { // colon means the value will change
         //     templateUrl: 'partials/item-view.html',
@@ -22,6 +30,5 @@ app.config(function($routeProvider) {
         //     templateUrl: 'partials/item-new.html',
         //     controller: 'ItemEditCtrl'
         // })
-        .otherwise('/contact/new'); // This could be a 404 error...
-
+        .otherwise('/login'); // This could be a 404 error...
 });

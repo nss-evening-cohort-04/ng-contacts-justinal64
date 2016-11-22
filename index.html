@@ -20,38 +20,22 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">Address Book</a>
+              <a class="navbar-brand" href="#">Todo App</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right" ng-repeat="navItem in navItems">
-                <li><a href="#">{{navItem.name}}</a></li>
+                <li><a href="{{navItem.url}}">{{navItem.name}}</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
-          </div> <!-- /.container-fluid -->
+          </div><!-- /.container-fluid -->
         </nav>
-        <div>
-            <div class="col-xs-offset-3 col-xs-6">
-                <!-- Login Section -->
-<!--                 <div class="login" ng-controller="LoginCtrl" ng-show="showListView">
-                    <form>
-                        <div class="container col-xs-8 col-xs-offset-2" id="login-container">
-                            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" value="" ng-model="user.login_email">
-                            <input type="password" id="inputPassword" class="form-control" placeholder="Password" value="" ng-model="user.login_password">
-                            <input type="text" id="inputUsername" class="form-control" placeholder="Username" value="" ng-model="user.login_username">
-                            <button class="btn btn-lg btn-success col-xs-6" id="loginButton" ng-click="login()">Login</button>
-                            <button class="btn btn-lg btn-primary col-xs-6" id="registerButton" ng-click="register()">Register</button>
-                        </div>
-                    </form>
-                </div> -->
-                <!-- Existing Contacts -->
 
-            </div>
+        <div class="row">
+            <div class="col-xs-offset-2 col-xs-8" ng-view></div>
         </div>
-    <!-- Start of test -->
 
-  <!-- End of test -->
     <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
     <script type="text/javascript" src="/lib/node_modules/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="/lib/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -60,15 +44,11 @@
     <script type="text/javascript" src="/javascripts/app.js"></script>
     <script src="/javascripts/AppConstants.js"></script>
     <script type="text/javascript" src="/javascripts/AppConfig.js"></script>
-    <!-- <script type="text/javascript" src="/javascripts/factories/LoginFactory.js"></script> -->
     <script type="text/javascript" src="/javascripts/factories/ContactFactory.js"></script>
     <script type="text/javascript" src="/javascripts/controllers/NavCtrl.js"></script>
-    <!-- <script type="text/javascript" src="/javascripts/controllers/MainCtrl.js"></script> -->
-    <!-- <script type="text/javascript" src="/javascripts/controllers/LoginCtrl.js"></script> -->
     <script type="text/javascript" src="/javascripts/controllers/NewContactCtrl.js"></script>
-
-
-
+    <script type="text/javascript" src="/javascripts/controllers/DisplayContactsCtrl.js"></script>
+    <script type="text/javascript" src="/javascripts/controllers/LoginCtrl.js"></script>
     </body>
 </html>
 

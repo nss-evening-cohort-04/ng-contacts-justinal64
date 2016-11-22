@@ -1,0 +1,113 @@
+<div class="new-contact" ng-controller="NewContactCtrl"> <!-- ng-show="!showListView" -->
+    <h1>New Address Book Entry</h1>
+        <!-- <div ng-show="!showListView"> -->
+    <form>
+        <h3>Business Section</h3>
+        <!-- Business Section -->
+        <!-- Cooler way to get address info and annivarsary?? -->
+        <div class="row">
+            <div class="form-group col-md-4">
+                <label for="name" class="control-label">First Name</label>
+                <input type="text" value='' class="form-control" id="name" placeholder="First Name" ng-model="newContact.first_name">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="name" class="control-label">Last Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Last Name" ng-model="newContact.last_name">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="name" class="control-label">Email Address</label>
+                <input type="email" value='' class="form-control" id="name" placeholder="Email Address" ng-model="newContact.email_address">
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-4">
+                <label for="name" class="control-label">Office Number</label>
+                <input type="text" value='' class="form-control" id="name" placeholder="Office Number" ng-model="newContact.office_phone">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="name" class="control-label">Cell Number</label>
+                <input type="text" value='' class="form-control" id="name" placeholder="Cell Number" ng-model="newContact.cell_phone">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="name" class="control-label">Business Name</label>
+                <input type="text" value='' class="form-control" id="name" placeholder="Business Name" ng-model="newContact.business_name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-4">
+                <label for="name" class="control-label">Address</label>
+                <input type="text" value='' class="form-control" id="name" placeholder="Address" ng-model="newContact.address">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="name" class="control-label">City</label>
+                <input type="text" value='' class="form-control" id="name" placeholder="City" ng-model="newContact.city">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="name" class="control-label">State</label>
+                <input type="text" value='' class="form-control" id="name" placeholder="State" ng-model="newContact.state">
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-4">
+                <label for="name" class="control-label">Zip</label>
+                <input type="text" value='' class="form-control" id="name" placeholder="Zip" ng-model="newContact.zip">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="name" class="control-label">Country</label>
+                <input type="text" value='' class="form-control" id="name" placeholder="Country" ng-model="newContact.country">
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-12">
+                <label for="name" class="control-label">Additional Info</label>
+                <textarea class="form-control" rows="5" id="comment" ng-model="newContact.add_info"></textarea>
+            </div>
+        </div>
+        <!-- Social Media -->
+        <!-- Add Icons for social media -->
+        <h3>Social Media</h3>
+        <div class="row">
+            <div class="form-group col-md-4">
+                <label for="name" class="control-label">LinkedIn</label>
+                <input type="text" value='' class="form-control" id="name" placeholder="LinkedIn" ng-model="newContact.linkedin">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="name" class="control-label">Facebook</label>
+                <input type="text" value='' class="form-control" id="name" placeholder="Facebook" ng-model="newContact.facebook">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="name" class="control-label">Google+</label>
+                <input type="text" value='' class="form-control" id="name" placeholder="Google+" ng-model="newContact.google">
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-4">
+                <label for="name" class="control-label">Twitter</label>
+                <p class="wrapper">
+                    <input class="icon" type="text" placeholder="&#xf081;" ng-model="newContact.twitter"/>
+                </p>
+            </div>
+        </div>
+        <!-- Personal Section -->
+        <h3>Personal Section</h3>
+        <div class="row">
+            <div class="form-group col-md-4">
+                <label for="name" class="control-label">Birthday</label>
+                <input type="text" value='' class="form-control" id="name" placeholder="Birthday" ng-model="newContact.birthday">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="name" class="control-label">Spouse</label>
+                <input type="text" value='' class="form-control" id="name" placeholder="Spouse" ng-model="newContact.spouse">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="name" class="control-label">Work Anniversary</label>
+                <input type="text" value='' class="form-control" id="name" placeholder="Work Anniversary" ng-model="newContact.work_anniversary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-2 col-xs-offset-5">
+                <button type="submit" class="btn btn-success" ng-click="addNewContact()">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
